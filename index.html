@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- custom css -->
+    <style type="text/css">
+    </style>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="sky">What color is the sky?</h2>
+                <input type="text" name="answer" placeholder="Type here" id="userAnswerOne" class="answerBox">
+                <p id="demo"></p>
+                <br>
+                <h2>Is Copper cute?</h2>
+                <input type="text" name="answer" placeholder="Type here" id="answer2">
+            </div>
+        </div>
+    </div>
+    <button id="grade" onClick="grade();">grade Quiz</button><button onClick="clearAll();">clear all</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- custom JS -->
+    <script type="text/javascript">
+    //create array from user input
+
+
+
+    function grade() {
+        var userAnswerOne = document.getElementById("userAnswerOne").value;
+        var text;
+
+
+
+        if (userAnswerOne === "blue") {
+            document.getElementById("userAnswerOne").style.color = "green"
+            text = "Right!";
+        } else {
+            document.getElementById("userAnswerOne").style.color = "red"
+            text = "Try again.";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+
+
+
+
+    //clear all button
+    
+        //var input = document.getElementsByTagName("input");
+        //var ii
+        //for (var ii=0; ii < input.length; ii++) {
+          //if (input[ii].type == "text") {
+            //input[ii].onclick = function clearAll() {
+           //input[ii].value = "";
+            //}
+          //}
+        
+        
+
+
+    </script>
+</body>
+
+</html>
